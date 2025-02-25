@@ -5,7 +5,32 @@
 # *   *
 # *****
 def hollow_square(n):
-    return ""
+    result = ''
+    for i in range (0,n):
+        result += "*"
+    result += "\n"
+    return (result.strip())
+
+    for i in range (0,n - 3):
+        result += "*" + " "
+    result += "\n"
+    return (result.strip())
+
+    for i in range (0,n - 3):
+        result += "*" + " "
+    result += "\n"
+    return (result.strip())
+
+    for i in range (0,n - 3):
+        result += "*" + " "
+    result += "\n"
+    return (result.strip())
+
+    for i in range (0,n):
+        result += "*"
+    result += "\n"
+    return (result.strip())  
+
 
 # 1
 # 12
