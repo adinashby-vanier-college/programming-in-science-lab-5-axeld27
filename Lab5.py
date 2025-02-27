@@ -5,31 +5,29 @@
 # *   *
 # *****
 def hollow_square(n):
-    result = ''
+    result = ""
     for i in range (0,n):
         result += "*"
     result += "\n"
-    return (result.strip())
+    
+    if n >= 5:
+        for i in range (0,n - 4):
+            result += "*   *"
+        result += "\n"
 
-    for i in range (0,n - 3):
-        result += "*" + " "
-    result += "\n"
-    return (result.strip())
+        for i in range (0,n - 4):
+            result += "*   *"
+        result += "\n"
 
-    for i in range (0,n - 3):
-        result += "*" + " "
-    result += "\n"
-    return (result.strip())
-
-    for i in range (0,n - 3):
-        result += "*" + " "
-    result += "\n"
-    return (result.strip())
+        for i in range (0,n - 4):
+            result += "*   *"
+        result += "\n"
 
     for i in range (0,n):
-        result += "*"
-    result += "\n"
-    return (result.strip())  
+            result += "*"
+        result += "\n"
+
+    return (result.strip())
 
 
 # 1
@@ -37,7 +35,7 @@ def hollow_square(n):
 # 123
 # 1234
 def number_pattern(n):
-    result = ''
+    result = ""
     for i in range(1,n + 1):
         for j in range(1, i + 1): 
             result += str(j)
